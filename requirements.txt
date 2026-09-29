@@ -1,0 +1,13 @@
+torch>=2.1.0
+transformers>=4.38.0
+peft>=0.8.0
+accelerate>=0.25.0
+datasets>=2.16.0
+numpy
+scipy
+scikit-learn
+matplotlib
+tqdm
+wandb
+pyyaml
+lm-eval>=0.4.0

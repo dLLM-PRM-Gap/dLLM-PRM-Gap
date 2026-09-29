@@ -1,0 +1,26 @@
+{
+  "Vanilla_K1": {
+    "avg_time_s": 20.714746019712138,
+    "n_problems_measured": 2638
+  },
+  "PRM-Guided_K8_be64": {
+    "avg_time_s": 155.95356330553454,
+    "n_problems_measured": 2638
+  },
+  "PRM-Guided_K32_be64": {
+    "avg_time_s": 612.6102350265353,
+    "n_problems_measured": 2638
+  },
+  "PRM-Hybrid_K8_be64": {
+    "avg_time_s": 155.9666793025021,
+    "n_problems_measured": 2638
+  },
+  "LLaDA_Vanilla_K1": {
+    "avg_time_s": 23.213570887035715,
+    "n_problems_measured": 1319
+  },
+  "LLaDA_PRM-Guided_K8": {
+    "avg_time_s": 172.02482941622372,
+    "n_problems_measured": 2638
+  }
+}

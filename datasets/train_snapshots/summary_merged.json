@@ -1,0 +1,20 @@
+{
+  "task": "gsm8k",
+  "total_trajectories": 59116,
+  "total_problems": 7473,
+  "source_groups": {
+    "L0": {
+      "count": 29892,
+      "problems": 7473
+    },
+    "S23": {
+      "count": 14946,
+      "problems": 7473
+    },
+    "S26": {
+      "count": 14278,
+      "problems": 7139
+    }
+  },
+  "release_note": "Source paths intentionally omitted from the public artifact."
+}

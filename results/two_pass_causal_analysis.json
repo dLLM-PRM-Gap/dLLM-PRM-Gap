@@ -1,0 +1,77 @@
+{
+  "n_rows": 1012992,
+  "overall_auc": {
+    "causal_fwd": 0.6028942982232811,
+    "causal_bwd": 0.5000010351942306,
+    "causal_twopass_avg": 0.6029128025253143,
+    "bidir": 0.6866254678433709
+  },
+  "per_mask_bucket": {
+    "0.0-0.10": {
+      "n": 126624,
+      "pos_rate": 0.43302217589082637,
+      "auc": {
+        "causal_fwd": 0.6114725093103518,
+        "causal_bwd": 0.5,
+        "causal_twopass_avg": 0.6114227333934682,
+        "bidir": 0.7701710617736619
+      }
+    },
+    "0.1-0.30": {
+      "n": 211040,
+      "pos_rate": 0.43302217589082637,
+      "auc": {
+        "causal_fwd": 0.6201993178181403,
+        "causal_bwd": 0.5,
+        "causal_twopass_avg": 0.6200121518503595,
+        "bidir": 0.7386659614237588
+      }
+    },
+    "0.3-0.50": {
+      "n": 168832,
+      "pos_rate": 0.43302217589082637,
+      "auc": {
+        "causal_fwd": 0.6253615509768358,
+        "causal_bwd": 0.5,
+        "causal_twopass_avg": 0.6253213710885667,
+        "bidir": 0.6984118250440369
+      }
+    },
+    "0.5-0.70": {
+      "n": 168832,
+      "pos_rate": 0.43302217589082637,
+      "auc": {
+        "causal_fwd": 0.6173871184494382,
+        "causal_bwd": 0.5,
+        "causal_twopass_avg": 0.6172544559360554,
+        "bidir": 0.6739057344270589
+      }
+    },
+    "0.7-0.90": {
+      "n": 168832,
+      "pos_rate": 0.43302217589082637,
+      "auc": {
+        "causal_fwd": 0.5943223253284227,
+        "causal_bwd": 0.5,
+        "causal_twopass_avg": 0.5941936042626491,
+        "bidir": 0.6412419676918664
+      }
+    },
+    "0.9-1.01": {
+      "n": 168832,
+      "pos_rate": 0.43302217589082637,
+      "auc": {
+        "causal_fwd": 0.528756217175985,
+        "causal_bwd": 0.5000237202041451,
+        "causal_twopass_avg": 0.5291941981276179,
+        "bidir": 0.5424252538662643
+      }
+    }
+  },
+  "score_correlations": {
+    "fwd_vs_bwd_pearson": -0.029620151297759943,
+    "fwd_vs_bidir_pearson": 0.6538681664787364,
+    "twopass_vs_bidir_pearson": 0.6443474973347968
+  },
+  "conclusion_auto": "Two-pass causal FAILS to recover bidir (gap=+0.084) \u2192 mechanism is NOT side-of-context; it's joint-unordered modeling"
+}

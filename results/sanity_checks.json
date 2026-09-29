@@ -1,0 +1,55 @@
+{
+  "sign_convention": {
+    "mean_score_correct": -0.9206,
+    "mean_score_incorrect": -3.6748,
+    "diff": 2.7542,
+    "higher_score_is_correct": true
+  },
+  "rank_correlation": {
+    "kendall_tau_mean": 0.3966357410577686,
+    "kendall_tau_median": 0.4414026735030214,
+    "pearson_bin_mean": 0.2992997250691996,
+    "n_problems": 1182
+  },
+  "score_delta": {
+    "mean_delta": 1.8376799274674351,
+    "median_delta": 1.8543787030196124,
+    "positive_fraction": 0.8798646362098139,
+    "p10": -0.21100293658673763,
+    "p90": 3.7776298125584917,
+    "n_problems": 1182
+  },
+  "rerank_comparator": {
+    "N=4": {
+      "random_mean_acc": 43.65,
+      "random_std": 0.97,
+      "prm_acc": 44.88,
+      "prm_minus_random": 1.23
+    },
+    "N=8": {
+      "random_mean_acc": 43.24,
+      "random_std": 1.26,
+      "prm_acc": 42.84,
+      "prm_minus_random": -0.41
+    },
+    "N=16": {
+      "random_mean_acc": 43.87,
+      "random_std": 0.75,
+      "prm_acc": 52.46,
+      "prm_minus_random": 8.6
+    },
+    "N=32": {
+      "random_mean_acc": 43.28,
+      "random_std": 1.16,
+      "prm_acc": 65.35,
+      "prm_minus_random": 22.07
+    }
+  },
+  "auc_slices": {
+    "bidir_PRM_mr_0_traj_level": "approx 0.77 (from mr_0.0-0.1 bucket AUC per prm_correlation_analysis.json)",
+    "bidir_PRM_bucket_0.0_0.1": 0.7702,
+    "causal_PRM_mean_pool_mr_0_traj_level": 0.6147,
+    "causal_PRM_last_token_mr_0_traj_level": 0.7274,
+    "bidir_ORM_mr_0_traj_level_REFERENCE_ONLY": 0.9623
+  }
+}

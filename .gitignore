@@ -1,0 +1,7 @@
+# Hub-only binary artifacts stay in the local staging tree and are uploaded separately.
+datasets/train_snapshots/*.pt
+weights/*/adapter.safetensors
+source_md5.log
+__pycache__/
+*.pyc
+.DS_Store

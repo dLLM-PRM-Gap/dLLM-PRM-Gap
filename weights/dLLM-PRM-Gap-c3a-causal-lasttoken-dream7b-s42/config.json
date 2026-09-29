@@ -1,0 +1,38 @@
+{
+  "base_model": "Dream-org/Dream-v0-Instruct-7B",
+  "adapter_type": "LoRA plus reward head",
+  "attention": "causal",
+  "pool_strategy": "last_token",
+  "mask_aware_pooling": true,
+  "step_embedding": false,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "release_status": "public release",
+  "checkpoint_identity_status": "exact C3 ORM-protocol control",
+  "paper_role": "C3A causal last-token ORM-protocol control",
+  "adapter_bytes": 34890548,
+  "parameter_prefixes_kept": [
+    "lora_A",
+    "lora_B",
+    "reward_head"
+  ],
+  "causal": true,
+  "no_step_embed": true,
+  "no_mask_aware": false,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "step_embed_dim": 256,
+  "reward_hidden": 1024,
+  "seed": 42,
+  "max_steps": 15000,
+  "best_step": "checkpoint-selected",
+  "orm_protocol": true
+}

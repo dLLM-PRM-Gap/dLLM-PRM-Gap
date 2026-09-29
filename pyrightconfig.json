@@ -1,0 +1,20 @@
+{
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "wandb",
+    "checkpoints",
+    "data",
+    "eval_results",
+    "external",
+    "**/__pycache__",
+    "**/*.pyc"
+  ],
+  "extraPaths": [
+    "src"
+  ],
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": "none",
+  "pythonVersion": "3.10"
+}

@@ -1,0 +1,12 @@
+{
+  "method": "prm_guided_topm",
+  "K": 8,
+  "M": 2,
+  "be": 64,
+  "seed": 43,
+  "task": "gsm8k",
+  "num_shards": 16,
+  "num_correct": 909,
+  "num_total": 1319,
+  "accuracy": 0.689158453373768
+}

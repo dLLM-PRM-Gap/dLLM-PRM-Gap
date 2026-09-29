@@ -1,0 +1,25 @@
+{
+  "note": "Rerank Pareto using causal PRM with last-token pooling (Round 3 experimental follow-up). Scored on 42208 held-out final-state trajectories (mask=0). Monotonic up, contradicts prior non-monotonic claim from mean-pool variant.",
+  "checkpoint": "checkpoints/prm_causal_lasttoken_v1/final.pt",
+  "pool_strategy": "last_token",
+  "auc_mask0": 0.7274,
+  "rerank_accuracy_by_N": {
+    "1": 43.14,
+    "2": 45.34,
+    "4": 48.29,
+    "8": 49.66,
+    "16": 49.36,
+    "32": 50.64
+  },
+  "comparison_mean_pool": {
+    "note": "From eval_results/causal_prm_rerank_pareto.json",
+    "1": 43.14,
+    "8": 43.90,
+    "32": 40.56
+  },
+  "delta_N32_minus_N1_pp": {
+    "mean_pool": -2.58,
+    "last_token": 7.50
+  },
+  "gap_to_ORM_rerank_at_N32_pp": 32.07
+}

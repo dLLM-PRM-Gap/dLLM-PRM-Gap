@@ -1,0 +1,155 @@
+{
+  "description": "PRM-as-reranker (bidir PRM at mask=0) vs ORM-Rerank (bidir ORM)",
+  "n_problems": 1319,
+  "n_boot": 1000,
+  "pareto": {
+    "N=1": {
+      "prm_rerank_bidir_mask0": {
+        "acc": 43.139,
+        "ci95": [
+          40.637,
+          45.944
+        ]
+      },
+      "orm_rerank": {
+        "acc": 43.139,
+        "ci95": [
+          40.485,
+          45.868
+        ]
+      },
+      "paired_delta_prm_minus_orm_pp": 0.0,
+      "paired_ci95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    "N=2": {
+      "prm_rerank_bidir_mask0": {
+        "acc": 43.139,
+        "ci95": [
+          40.409,
+          45.868
+        ]
+      },
+      "orm_rerank": {
+        "acc": 55.876,
+        "ci95": [
+          53.374,
+          58.605
+        ]
+      },
+      "paired_delta_prm_minus_orm_pp": -12.737,
+      "paired_ci95_pp": [
+        -14.784,
+        -10.993
+      ]
+    },
+    "N=4": {
+      "prm_rerank_bidir_mask0": {
+        "acc": 44.882,
+        "ci95": [
+          42.002,
+          47.309
+        ]
+      },
+      "orm_rerank": {
+        "acc": 66.793,
+        "ci95": [
+          64.215,
+          69.447
+        ]
+      },
+      "paired_delta_prm_minus_orm_pp": -21.911,
+      "paired_ci95_pp": [
+        -24.412,
+        -19.636
+      ]
+    },
+    "N=8": {
+      "prm_rerank_bidir_mask0": {
+        "acc": 42.835,
+        "ci95": [
+          40.258,
+          45.641
+        ]
+      },
+      "orm_rerank": {
+        "acc": 75.133,
+        "ci95": [
+          72.858,
+          77.483
+        ]
+      },
+      "paired_delta_prm_minus_orm_pp": -32.297,
+      "paired_ci95_pp": [
+        -34.951,
+        -29.416
+      ]
+    },
+    "N=16": {
+      "prm_rerank_bidir_mask0": {
+        "acc": 52.464,
+        "ci95": [
+          49.886,
+          55.193
+        ]
+      },
+      "orm_rerank": {
+        "acc": 79.682,
+        "ci95": [
+          77.559,
+          81.88
+        ]
+      },
+      "paired_delta_prm_minus_orm_pp": -27.218,
+      "paired_ci95_pp": [
+        -29.871,
+        -24.792
+      ]
+    },
+    "N=32": {
+      "prm_rerank_bidir_mask0": {
+        "acc": 65.353,
+        "ci95": [
+          62.775,
+          68.006
+        ]
+      },
+      "orm_rerank": {
+        "acc": 82.714,
+        "ci95": [
+          80.743,
+          84.685
+        ]
+      },
+      "paired_delta_prm_minus_orm_pp": -17.362,
+      "paired_ci95_pp": [
+        -19.636,
+        -15.239
+      ]
+    }
+  },
+  "seed_variance": {
+    "ORM-rerank@8": {
+      "per_seed_acc_pp": [
+        100.0,
+        100.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 50.0,
+      "std_pp": 57.735
+    },
+    "PRM-rerank@8": {
+      "per_seed_acc_pp": [
+        100.0,
+        100.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 50.0,
+      "std_pp": 57.735
+    }
+  }
+}

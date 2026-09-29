@@ -1,0 +1,39 @@
+{
+  "base_model": "Dream-org/Dream-v0-Instruct-7B",
+  "adapter_type": "LoRA plus reward head",
+  "attention": "bidirectional",
+  "pool_strategy": "mean",
+  "mask_aware_pooling": false,
+  "step_embedding": false,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "release_status": "public release",
+  "checkpoint_identity_status": "exact submitted-paper main ORM",
+  "paper_role": "final-state outcome scorer for ORM Rerank@N",
+  "adapter_bytes": 20216444,
+  "parameter_prefixes_kept": [
+    "lora_A",
+    "lora_B",
+    "reward_head"
+  ],
+  "causal": false,
+  "no_step_embed": true,
+  "no_mask_aware": true,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "step_embed_dim": 256,
+  "reward_hidden": 1024,
+  "seed": 42,
+  "max_steps": 500,
+  "best_step": 500,
+  "train_samples": 53190,
+  "validation_samples": 5926
+}

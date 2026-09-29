@@ -1,0 +1,41 @@
+{
+  "base_model": "Dream-org/Dream-v0-Instruct-7B",
+  "adapter_type": "LoRA plus reward head",
+  "attention": "bidirectional",
+  "pool_strategy": "mean",
+  "mask_aware_pooling": true,
+  "step_embedding": true,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "release_status": "public release",
+  "checkpoint_identity_status": "exact submitted-paper main PRM",
+  "paper_role": "process-reward model used by PRM Guided, Hybrid, and the snapshot diagnostics",
+  "adapter_bytes": 36202468,
+  "parameter_prefixes_kept": [
+    "lora_A",
+    "lora_B",
+    "reward_head",
+    "step_proj",
+    "step_embed"
+  ],
+  "causal": false,
+  "no_step_embed": false,
+  "no_mask_aware": false,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "step_embed_dim": 256,
+  "reward_hidden": 1024,
+  "seed": 42,
+  "max_steps": 3000,
+  "best_step": 2500,
+  "train_samples": 1276560,
+  "validation_samples_sampled": 6000
+}

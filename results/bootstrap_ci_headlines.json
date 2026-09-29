@@ -1,0 +1,80 @@
+{
+  "n_boot": 1000,
+  "n_problems": 1319,
+  "methods": {
+    "orm_rerank@8": {
+      "acc": 75.133,
+      "ci95_lo": 72.858,
+      "ci95_hi": 77.407,
+      "ci_halfwidth_pp": 2.274
+    },
+    "orm_rerank@32": {
+      "acc": 82.714,
+      "ci95_lo": 80.819,
+      "ci95_hi": 84.61,
+      "ci_halfwidth_pp": 1.895
+    },
+    "majority@8": {
+      "acc": 60.045,
+      "ci95_lo": 57.468,
+      "ci95_hi": 62.623,
+      "ci_halfwidth_pp": 2.578
+    },
+    "majority@32": {
+      "acc": 67.627,
+      "ci95_lo": 65.201,
+      "ci95_hi": 70.205,
+      "ci_halfwidth_pp": 2.502
+    },
+    "oracle@8": {
+      "acc": 81.046,
+      "ci95_lo": 79.075,
+      "ci95_hi": 83.245,
+      "ci_halfwidth_pp": 2.085
+    },
+    "oracle@32": {
+      "acc": 91.13,
+      "ci95_lo": 89.613,
+      "ci95_hi": 92.722,
+      "ci_halfwidth_pp": 1.554
+    }
+  },
+  "paired_deltas": {
+    "orm_rerank@8 \u2212 majority@8": {
+      "delta_pp": 15.087,
+      "ci95_lo_pp": 13.116,
+      "ci95_hi_pp": 17.437
+    },
+    "orm_rerank@32 \u2212 majority@32": {
+      "delta_pp": 15.087,
+      "ci95_lo_pp": 12.964,
+      "ci95_hi_pp": 17.437
+    },
+    "oracle@8 \u2212 majority@8": {
+      "delta_pp": 21.001,
+      "ci95_lo_pp": 18.954,
+      "ci95_hi_pp": 23.275
+    },
+    "oracle@32 \u2212 majority@32": {
+      "delta_pp": 23.503,
+      "ci95_lo_pp": 21.152,
+      "ci95_hi_pp": 25.929
+    },
+    "oracle@8 \u2212 orm_rerank@8": {
+      "delta_pp": 5.914,
+      "ci95_lo_pp": 4.625,
+      "ci95_hi_pp": 7.127
+    },
+    "oracle@32 \u2212 orm_rerank@32": {
+      "delta_pp": 8.415,
+      "ci95_lo_pp": 7.051,
+      "ci95_hi_pp": 10.008
+    }
+  },
+  "prm_guided_approx": {
+    "note": "PRM-Guided per-problem outcomes not loaded here; bootstrap deferred to future session",
+    "approx_ci_halfwidth_wilson_pp_at_N1319_p0.665": 2.55,
+    "approx_ci_halfwidth_wilson_pp_at_N1319_p0.700": 2.48,
+    "paired_ORM_minus_PRM_upper_bound_pp": 2.4
+  }
+}

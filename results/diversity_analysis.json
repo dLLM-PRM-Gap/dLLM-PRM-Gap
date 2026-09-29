@@ -1,0 +1,14 @@
+{
+  "prm_hybrid": {
+    "unique_ans_mean": 1.7482941622441244,
+    "unique_ans_std": 1.4366674599032985,
+    "entropy_mean": 0.4258282911117177,
+    "entropy_std": 0.7470466369851505
+  },
+  "vanilla_bon": {
+    "unique_ans_mean": 4.312357846853677,
+    "unique_ans_std": 2.0288496512996437,
+    "entropy_mean": 1.6826613625938678,
+    "entropy_std": 0.8953102711931112
+  }
+}
